@@ -1,15 +1,7 @@
 body {
     display: flex;
     max-width: 1200px;
-    margin: 40px auto;
-    flex-direction: column;
-}
-
-h3 {
-    padding: 12px 0;
-}
-.flex-column {
-    display: flex;
+    margin: auto;
     flex-direction: column;
 }
 
@@ -21,7 +13,6 @@ h3 {
     padding: 16px;
     border-radius: 4px;
 }
-
 
 .log {
     font-family: monospace;
