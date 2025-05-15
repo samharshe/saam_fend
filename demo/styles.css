@@ -1,8 +1,28 @@
+:root {
+    --color-primary-pure-white: #ffffff;
+    --color-primary-electric: #6f3efc;
+    --color-primary-zircon: #21212d;
+
+    --color-secondary-magnesium: #b5b5ba;
+    --color-secondary-aluminum: #e7e5e8;
+    --color-secondary-midde-electric: #bea8fe;
+    --color-secondary-light-electric: #d5dcfe;
+    --color-secondary-basalt: #494657;
+    --color-secondary-asphalt: #747185;
+
+    --color-accent-turbo-green: #b6f7d6;
+    --color-accent-signal-red: #e75426;
+    --color-accent-burnt-orange: #fc146c;
+}
+
 body {
     display: flex;
     max-width: 1200px;
     margin: auto;
+    padding: 40px;
     flex-direction: column;
+    font-family: "Manrope", sans-serif;
+    color: var(--color-zircon);
 }
 
 .gallery {
@@ -11,12 +31,12 @@ body {
     justify-content: space-around;
     border: 1px solid gray;
     padding: 16px;
-    border-radius: 4px;
+    border-radius: 24px;
 }
 
 .log {
     font-family: monospace;
     border: 1px solid gray;
     padding: 16px;
-    border-radius: 4px;
+    border-radius: 24px;
 }
