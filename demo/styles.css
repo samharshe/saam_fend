@@ -14,7 +14,7 @@
     --color-accent-signal-red: #e75426;
     --color-accent-burnt-orange: #f1c46c;
 
-    --gradient-electric: linear-gradient(to left, var(--color-primary-pure-white), var(--color-primary-electric));
+    --gradient-custom-electric: linear-gradient(to left, var(--color-secondary-light-electric), var(--color-primary-electric));
     --gradient-magnesium: linear-gradient(to left, var(--color-primary-pure-white), var(--color-secondary-magnesium));
     
     --typeface-standard: "Manrope", sans-serif;
@@ -30,13 +30,22 @@ body {
     color: var(--color-zircon);
 }
 
+div {
+    margin: 12px 0;
+}
+
+h3 {
+    margin: 6px 0;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 16px;
     border-radius: 24px;
-    background: var(--gradient-electric);
+    background: var(--gradient-custom-electric);
+    /* background: var(--color-primary-electric); */
 }
 
 .gallery img {
@@ -48,7 +57,6 @@ body {
 
 .log {
     font-family: monospace;
-    border: 1px solid gray;
+    border-left: 6px solid var(--color-accent-signal-red);
     padding: 16px;
-    border-radius: 24px;
 }
