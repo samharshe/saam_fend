@@ -5,14 +5,19 @@
 
     --color-secondary-magnesium: #b5b5ba;
     --color-secondary-aluminum: #e7e5e8;
-    --color-secondary-midde-electric: #bea8fe;
+    --color-secondary-middle-electric: #bea8fe;
     --color-secondary-light-electric: #d5dcfe;
     --color-secondary-basalt: #494657;
     --color-secondary-asphalt: #747185;
 
     --color-accent-turbo-green: #b6f7d6;
     --color-accent-signal-red: #e75426;
-    --color-accent-burnt-orange: #fc146c;
+    --color-accent-burnt-orange: #f1c46c;
+
+    --gradient-electric: linear-gradient(to left, var(--color-primary-pure-white), var(--color-primary-electric));
+    --gradient-magnesium: linear-gradient(to left, var(--color-primary-pure-white), var(--color-secondary-magnesium));
+    
+    --typeface-standard: "Manrope", sans-serif;
 }
 
 body {
@@ -21,7 +26,7 @@ body {
     margin: auto;
     padding: 40px;
     flex-direction: column;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--typeface-standard);
     color: var(--color-zircon);
 }
 
@@ -29,9 +34,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid gray;
     padding: 16px;
     border-radius: 24px;
+    background: var(--gradient-electric);
+}
+
+.gallery img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .log {
